@@ -114,10 +114,20 @@ EOD;
                     <label for="contact_1" class="col-6">Personal Contact</label>
                     <label for="contact_2" class="col-6">Organization Contact</label>
                     <div class="col-6">
-                      <input class="form-control" id="contact_1" type="text" placeholder="Phone number">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                        </div>
+                        <input id="contact_1" type="text" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask>
+                      </div>
                     </div>
                     <div class="col-6">
-                      <input class="form-control" id="contact_2" type="text" placeholder="Phone number">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                        </div>
+                        <input id="contact_2" type="text" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask>
+                      </div>
                     </div>
                   </div>
 
@@ -323,7 +333,10 @@ EOD;
 <script src="../plugins/jquery-validation/additional-methods.min.js"></script>
 <script src="../dist/js/adminlte.min.js"></script>
 <script src="../dist/js/demo.js"></script>
-<!--        datatable-->
+<!-- InputMask -->
+<script src="../plugins/moment/moment.min.js"></script>
+<script src="../plugins/inputmask/jquery.inputmask.min.js"></script>
+<!--datatable-->
 <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script src="../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
@@ -339,7 +352,7 @@ EOD;
 <script>
 
   $(function () {
-    $("#example2").DataTable({
+    $("#example1").DataTable({
       "responsive": true, "lengthChange": false, "autoWidth": false,
       "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
@@ -398,6 +411,12 @@ EOD;
       }
     });
   });
+
+  $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+  //Datemask2 mm/dd/yyyy
+  $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+  //Money Euro
+  $('[data-mask]').inputmask()
 
 </script>
 </body>

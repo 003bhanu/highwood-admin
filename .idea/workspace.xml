@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05545c86-7a2e-4e04-8612-1cf28679d246" name="Default Changelist" comment="" />
+    <list default="true" id="05545c86-7a2e-4e04-8612-1cf28679d246" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/client.php" beforeDir="false" afterPath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/input.php" beforeDir="false" afterPath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/input.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database/erd.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/config/database/erd.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database/erd.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/config/database/erd.mwb.bak" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +18,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/AdminLTE-master/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -21,6 +32,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1qpt7k2UZ3oUBrtHCVC9VXwS7e1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -53,11 +65,22 @@
       <workItem from="1618203487525" duration="15092000" />
       <workItem from="1618805426275" duration="8846000" />
       <workItem from="1618829406322" duration="4390000" />
-      <workItem from="1618891473623" duration="1239000" />
+      <workItem from="1618891473623" duration="12837000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

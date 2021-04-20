@@ -1,5 +1,5 @@
 <?php
-$title = 'Blog';
+$title = 'Orders';
 
 $icon_2x = <<<EOD
 <i class="fas fa-user-alt fa-2x"></i>
@@ -25,8 +25,6 @@ EOD;
   <link rel="stylesheet" href="../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
   <link rel="stylesheet" href="../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
-  <!--dropzone-->
-  <link rel="stylesheet" href="../plugins/dropzone/min/dropzone.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -82,125 +80,65 @@ EOD;
 
               <form id="quickForm">
                 <div class="card-body">
-                  <div class="form-group">
-                    <label for="title">Blog title</label>
-                    <input class="form-control" id="title" type="text" placeholder="Title text">
+
+                  <div class="form-group row">
+                    <label for="f_name" class="col-12">Client Name</label>
+                    <div class="col-6">
+                      <input class="form-control" id="f_name" type="text" placeholder="First name">
+                    </div>
+                    <div class="col-6">
+                      <input class="form-control" id="l_name" type="text" placeholder="Last name">
+                    </div>
                   </div>
 
                   <div class="form-group">
-                    <label for="s_content">summarized Blog content</label>
-                    <input class="form-control" id="s_content" type="text" placeholder="Title text">
+                    <label for="org">Organizaton</label>
+                    <input class="form-control" id="org" type="text" placeholder="Organization">
                   </div>
 
-                  <div class="form-group">
-                    <label for="f_content">Full blog ontent</label>
-                    <textarea id="f_content" class="form-control" rows="3" placeholder="Blog text content"></textarea>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <div class="card-body" style="padding-top: 0">
-                    <label for="actions">Select Image(s)</label>
-                    <div id="actions" class="row">
-                      <div class="col-lg-6">
-                        <div class="btn-group w-100">
-                      <span class="btn btn-success col fileinput-button">
-                        <i class="fas fa-plus"></i>
-                        <span>Add files</span>
-                      </span>
-                          <button type="submit" class="btn btn-primary col start">
-                            <i class="fas fa-upload"></i>
-                            <span>Start upload</span>
-                          </button>
-                          <button type="reset" class="btn btn-warning col cancel">
-                            <i class="fas fa-times-circle"></i>
-                            <span>Cancel upload</span>
-                          </button>
+                  <div class="form-group row">
+                    <label for="contact_1" class="col-6">Personal Contact</label>
+                    <label for="contact_2" class="col-6">Organization Contact</label>
+                    <div class="col-6">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fas fa-phone"></i></span>
                         </div>
-                      </div>
-                      <div class="col-lg-6 d-flex align-items-center">
-                        <div class="fileupload-process w-100">
-                          <div id="total-progress" class="progress progress-striped active" role="progressbar"
-                               aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-                            <div class="progress-bar progress-bar-success" style="width:0%;"
-                                 data-dz-uploadprogress></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="table table-striped files" id="previews">
-                        <div id="template" class="row mt-2">
-                          <div class="col-auto">
-                            <span class="preview"><img src="data:," alt="" data-dz-thumbnail /></span>
-                          </div>
-                          <div class="col d-flex align-items-center">
-                            <p class="mb-0">
-                              <span class="lead" data-dz-name></span>
-                              (<span data-dz-size></span>)
-                            </p>
-                            <strong class="error text-danger" data-dz-errormessage></strong>
-                          </div>
-                          <div class="col-4 d-flex align-items-center">
-                            <div class="progress progress-striped active w-100" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-                              <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
-                            </div>
-                          </div>
-                          <div class="col-auto d-flex align-items-center">
-                            <div class="btn-group">
-                              <button class="btn btn-primary start">
-                                <i class="fas fa-upload"></i>
-                                <span>Start</span>
-                              </button>
-                              <button data-dz-remove class="btn btn-warning cancel">
-                                <i class="fas fa-times-circle"></i>
-                                <span>Cancel</span>
-                              </button>
-                              <button data-dz-remove class="btn btn-danger delete">
-                                <i class="fas fa-trash"></i>
-                                <span>Delete</span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
+                        <input id="contact_1" type="text" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask>
                       </div>
                     </div>
-                    <div class="table table-striped files" id="previews">
-                      <div id="template" class="row mt-2">
-                        <div class="col-auto">
-                          <span class="preview"><img src="data:," alt="" data-dz-thumbnail/></span>
+                    <div class="col-6">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fas fa-phone"></i></span>
                         </div>
-                        <div class="col d-flex align-items-center">
-                          <p class="mb-0">
-                            <span class="lead" data-dz-name></span>
-                            (<span data-dz-size></span>)
-                          </p>
-                          <strong class="error text-danger" data-dz-errormessage></strong>
-                        </div>
-                        <div class="col-4 d-flex align-items-center">
-                          <div class="progress progress-striped active w-100" role="progressbar" aria-valuemin="0"
-                               aria-valuemax="100" aria-valuenow="0">
-                            <div class="progress-bar progress-bar-success" style="width:0%;"
-                                 data-dz-uploadprogress></div>
-                          </div>
-                        </div>
-                        <div class="col-auto d-flex align-items-center">
-                          <div class="btn-group">
-                            <button class="btn btn-primary start">
-                              <i class="fas fa-upload"></i>
-                              <span>Start</span>
-                            </button>
-                            <button data-dz-remove class="btn btn-warning cancel">
-                              <i class="fas fa-times-circle"></i>
-                              <span>Cancel</span>
-                            </button>
-                            <button data-dz-remove class="btn btn-danger delete">
-                              <i class="fas fa-trash"></i>
-                              <span>Delete</span>
-                            </button>
-                          </div>
-                        </div>
+                        <input id="contact_2" type="text" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask>
                       </div>
                     </div>
                   </div>
+
+                  <div class="form-group">
+                    <label for="address">Address</label>
+                    <input class="form-control" id="address" type="text" placeholder="Organization">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                           placeholder="Enter email">
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="username" class="col-6">Username</label>
+                    <label for="password" class="col-6">Password</label>
+                    <div class="col-6">
+                      <input class="form-control" id="username" type="text" placeholder="Username">
+                    </div>
+                    <div class="col-6">
+                      <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                  </div>
+
                 </div>
 
                 <div class="card-footer">
@@ -367,6 +305,7 @@ EOD;
         </div>
       </div>
     </section>
+
   </div>
 
   <?php
@@ -393,14 +332,13 @@ EOD;
 <script src="../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
 <script src="../plugins/datatables-buttons/js/buttons.print.min.js"></script>
 <script src="../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
-<!--dropzone-->
-<script src="../plugins/dropzone/min/dropzone.min.js"></script>
 <script>
+
   $(function () {
-    // $("#example1").DataTable({
-    //   "responsive": true, "lengthChange": false, "autoWidth": false,
-    //   "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-    // }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
     $('#example2').DataTable({
       "paging": true,
       "lengthChange": false,
@@ -412,93 +350,56 @@ EOD;
     });
   });
 
-  $(function () {
-    $.validator.setDefaults({
-      submitHandler: function () {
-        alert("Form successful submitted!");
-      }
-    });
-    $('#quickForm').validate({
-      rules: {
-        email: {
-          required: true,
-          email: true,
-        },
-        password: {
-          required: true,
-          minlength: 5
-        },
-        terms: {
-          required: true
-        },
-      },
-      messages: {
-        email: {
-          required: "Please enter a email address",
-          email: "Please enter a vaild email address"
-        },
-        password: {
-          required: "Please provide a password",
-          minlength: "Your password must be at least 5 characters long"
-        },
-        terms: "Please accept our terms"
-      },
-      errorElement: 'span',
-      errorPlacement: function (error, element) {
-        error.addClass('invalid-feedback');
-        element.closest('.form-group').append(error);
-      },
-      highlight: function (element, errorClass, validClass) {
-        $(element).addClass('is-invalid');
-      },
-      unhighlight: function (element, errorClass, validClass) {
-        $(element).removeClass('is-invalid');
-      }
-    });
-  });
+  // $(function () {
+  //   $.validator.setDefaults({
+  //     submitHandler: function () {
+  //       alert("Form successful submitted!");
+  //     }
+  //   });
+  //   $('#quickForm').validate({
+  //     rules: {
+  //       email: {
+  //         required: true,
+  //         email: true,
+  //       },
+  //       password: {
+  //         required: true,
+  //         minlength: 5
+  //       },
+  //       terms: {
+  //         required: true
+  //       },
+  //     },
+  //     messages: {
+  //       email: {
+  //         required: "Please enter a email address",
+  //         email: "Please enter a vaild email address"
+  //       },
+  //       password: {
+  //         required: "Please provide a password",
+  //         minlength: "Your password must be at least 5 characters long"
+  //       },
+  //       terms: "Please accept our terms"
+  //     },
+  //     errorElement: 'span',
+  //     errorPlacement: function (error, element) {
+  //       error.addClass('invalid-feedback');
+  //       element.closest('.form-group').append(error);
+  //     },
+  //     highlight: function (element, errorClass, validClass) {
+  //       $(element).addClass('is-invalid');
+  //     },
+  //     unhighlight: function (element, errorClass, validClass) {
+  //       $(element).removeClass('is-invalid');
+  //     }
+  //   });
+  // });
 
-  Dropzone.autoDiscover = false
+  // $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+  //
+  // $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+  //
+  // $('[data-mask]').inputmask()
 
-  var previewNode = document.querySelector("#template")
-  previewNode.id = ""
-  var previewTemplate = previewNode.parentNode.innerHTML
-  previewNode.parentNode.removeChild(previewNode)
-
-  var myDropzone = new Dropzone(document.body, {
-    url: "/target-url",
-    thumbnailWidth: 80,
-    thumbnailHeight: 80,
-    parallelUploads: 20,
-    previewTemplate: previewTemplate,
-    autoQueue: false,
-    previewsContainer: "#previews",
-    clickable: ".fileinput-button"
-  })
-
-  myDropzone.on("addedfile", function (file) {
-    file.previewElement.querySelector(".start").onclick = function () {
-      myDropzone.enqueueFile(file)
-    }
-  })
-
-  myDropzone.on("totaluploadprogress", function (progress) {
-    document.querySelector("#total-progress .progress-bar").style.width = progress + "%"
-  })
-
-  myDropzone.on("sending", function (file) {
-    document.querySelector("#total-progress").style.opacity = "1"
-    file.previewElement.querySelector(".start").setAttribute("disabled", "disabled")
-  })
-
-  myDropzone.on("queuecomplete", function (progress) {
-    document.querySelector("#total-progress").style.opacity = "0"
-  })
-
-  document.querySelector("#actions .start").onclick = function () {
-    myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED))
-  }
-  document.querySelector("#actions .cancel").onclick = function () {
-    myDropzone.removeAllFiles(true)
-  }
 </script>
 </html>

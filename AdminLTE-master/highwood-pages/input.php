@@ -23,6 +23,10 @@ EOD;
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
 
   <link rel="stylesheet" href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+  <!--  datatable-->
+  <link rel="stylesheet" href="../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -109,6 +113,181 @@ EOD;
                             </div>
                           </div>
 
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="form-group">
+                                <label for="title">Blog title</label>
+                                <input class="form-control" id="title" type="text" placeholder="Title text">
+                              </div>
+                              <div class="card-footer">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                              </div>
+                              <section class="content">
+                                <div class="container-fluid">
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="card card-primary">
+                                        <div class="card-header">
+                                          <h3 class="card-title text-uppercase"><b>All color data</b></h3>
+                                        </div>
+
+                                        <div class="card-body">
+                                          <table id="example3" class="table table-bordered table-hover">
+                                            <thead>
+                                            <tr>
+                                              <th>Rendering engine</th>
+                                              <th>Browser</th>
+                                              <th>Status</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            <tr>
+                                              <td>Gecko</td>
+                                              <td>Seamonkey 1.1</td>
+                                              <td>
+                                                <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                                  <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                                  <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td>Gecko</td>
+                                              <td>Epiphany 2.20</td>
+                                              <td>
+                                                <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                                  <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                                  <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td>Webkit</td>
+                                              <td>Safari 1.2</td>
+                                              <td>
+                                                <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                                  <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                                  <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td>Webkit</td>
+                                              <td>Safari 1.3</td>
+                                              <td>
+                                                <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                                  <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                                  <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                                </div>
+                                              </td>
+                                            </tr>
+
+                                            </tbody>
+                                            <tfoot>
+                                            <tr>
+                                              <th>Rendering engine</th>
+                                              <th>Browser</th>
+                                              <th>Status</th>
+                                            </tr>
+                                            </tfoot>
+                                          </table>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </section>
+                            </div>
+                            <div class="col-6">
+                              <div class="form-group">
+                                <label for="title">Blog title</label>
+                                <input class="form-control" id="title" type="text" placeholder="Title text">
+                              </div>
+                              <div class="card-footer">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                              </div>
+                              <section class="content">
+                                <div class="container-fluid">
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="card card-primary">
+                                        <div class="card-header">
+                                          <h3 class="card-title text-uppercase"><b>All color data</b></h3>
+                                        </div>
+
+                                        <div class="card-body">
+                                          <table id="example3" class="table table-bordered table-hover">
+                                            <thead>
+                                            <tr>
+                                              <th>Rendering engine</th>
+                                              <th>Browser</th>
+                                              <th>Status</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            <tr>
+                                              <td>Gecko</td>
+                                              <td>Seamonkey 1.1</td>
+                                              <td>
+                                                <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                                  <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                                  <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td>Gecko</td>
+                                              <td>Epiphany 2.20</td>
+                                              <td>
+                                                <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                                  <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                                  <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td>Webkit</td>
+                                              <td>Safari 1.2</td>
+                                              <td>
+                                                <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                                  <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                                  <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td>Webkit</td>
+                                              <td>Safari 1.3</td>
+                                              <td>
+                                                <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                                  <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                                  <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                                </div>
+                                              </td>
+                                            </tr>
+
+                                            </tbody>
+                                            <tfoot>
+                                            <tr>
+                                              <th>Rendering engine</th>
+                                              <th>Browser</th>
+                                              <th>Status</th>
+                                            </tr>
+                                            </tfoot>
+                                          </table>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </section>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </div>
@@ -155,6 +334,91 @@ EOD;
                               </div>
                             </div>
                           </div>
+
+                          <div class="form-group">
+                            <label for="title">Blog title</label>
+                            <input class="form-control" id="title" type="text" placeholder="Title text">
+                          </div>
+                          <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                          <section class="content">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="card card-primary">
+                                    <div class="card-header">
+                                      <h3 class="card-title text-uppercase"><b>All color data</b></h3>
+                                    </div>
+
+                                    <div class="card-body">
+                                      <table id="example3" class="table table-bordered table-hover">
+                                        <thead>
+                                        <tr>
+                                          <th>Rendering engine</th>
+                                          <th>Browser</th>
+                                          <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        <tr>
+                                          <td>Gecko</td>
+                                          <td>Seamonkey 1.1</td>
+                                          <td>
+                                            <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                              <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                              <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>Gecko</td>
+                                          <td>Epiphany 2.20</td>
+                                          <td>
+                                            <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                              <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                              <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>Webkit</td>
+                                          <td>Safari 1.2</td>
+                                          <td>
+                                            <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                              <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                              <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>Webkit</td>
+                                          <td>Safari 1.3</td>
+                                          <td>
+                                            <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                              <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                              <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+
+                                        </tbody>
+                                        <tfoot>
+                                        <tr>
+                                          <th>Rendering engine</th>
+                                          <th>Browser</th>
+                                          <th>Status</th>
+                                        </tr>
+                                        </tfoot>
+                                      </table>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
 
                         </div>
                       </div>
@@ -203,13 +467,98 @@ EOD;
                             </div>
                           </div>
 
+                          <div class="form-group">
+                            <label for="title">Blog title</label>
+                            <input class="form-control" id="title" type="text" placeholder="Title text">
+                          </div>
+                          <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                          <section class="content">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="card card-primary">
+                                    <div class="card-header">
+                                      <h3 class="card-title text-uppercase"><b>All color data</b></h3>
+                                    </div>
+
+                                    <div class="card-body">
+                                      <table id="example3" class="table table-bordered table-hover">
+                                        <thead>
+                                        <tr>
+                                          <th>Rendering engine</th>
+                                          <th>Browser</th>
+                                          <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        <tr>
+                                          <td>Gecko</td>
+                                          <td>Seamonkey 1.1</td>
+                                          <td>
+                                            <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                              <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                              <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>Gecko</td>
+                                          <td>Epiphany 2.20</td>
+                                          <td>
+                                            <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                              <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                              <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>Webkit</td>
+                                          <td>Safari 1.2</td>
+                                          <td>
+                                            <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                              <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                              <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>Webkit</td>
+                                          <td>Safari 1.3</td>
+                                          <td>
+                                            <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                              <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                              <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+
+                                        </tbody>
+                                        <tfoot>
+                                        <tr>
+                                          <th>Rendering engine</th>
+                                          <th>Browser</th>
+                                          <th>Status</th>
+                                        </tr>
+                                        </tfoot>
+                                      </table>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+
                         </div>
                       </div>
                     </div>
                   </div>
                 </section>
               </div>
-              <!--              tab 4-->
+              <!--              tab 4 tab-color-->
               <div class="tab-pane fade" id="tab-four" role="tabpanel" aria-labelledby="tab-four-tab">
                 <section class="content">
                   <div class="container-fluid">
@@ -272,6 +621,84 @@ EOD;
                     </div>
                   </div>
                 </section>
+
+                <section class="content">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="card card-primary">
+                          <div class="card-header">
+                            <h3 class="card-title text-uppercase"><b>All color data</b></h3>
+                          </div>
+
+                          <div class="card-body">
+                            <table id="example2" class="table table-bordered table-hover">
+                              <thead>
+                              <tr>
+                                <th>Rendering engine</th>
+                                <th>Browser</th>
+                                <th>Status</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+
+                              <tr>
+                                <td>Gecko</td>
+                                <td>Seamonkey 1.1</td>
+                                <td>
+                                  <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                    <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Gecko</td>
+                                <td>Epiphany 2.20</td>
+                                <td>
+                                  <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                    <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Webkit</td>
+                                <td>Safari 1.2</td>
+                                <td>
+                                  <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                    <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Webkit</td>
+                                <td>Safari 1.3</td>
+                                <td>
+                                  <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                    <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                  </div>
+                                </td>
+                              </tr>
+
+                              </tbody>
+                              <tfoot>
+                              <tr>
+                                <th>Rendering engine</th>
+                                <th>Browser</th>
+                                <th>Status</th>
+                              </tr>
+                              </tfoot>
+                            </table>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
               </div>
               <!--              tab 5-->
               <div class="tab-pane fade" id="tab-five" role="tabpanel" aria-labelledby="tab-five-tab">
@@ -314,6 +741,91 @@ EOD;
                             </div>
                           </div>
 
+                          <div class="form-group">
+                            <label for="title">Blog title</label>
+                            <input class="form-control" id="title" type="text" placeholder="Title text">
+                          </div>
+                          <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                          <section class="content">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="card card-primary">
+                                    <div class="card-header">
+                                      <h3 class="card-title text-uppercase"><b>All color data</b></h3>
+                                    </div>
+
+                                    <div class="card-body">
+                                      <table id="example3" class="table table-bordered table-hover">
+                                        <thead>
+                                        <tr>
+                                          <th>Rendering engine</th>
+                                          <th>Browser</th>
+                                          <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        <tr>
+                                          <td>Gecko</td>
+                                          <td>Seamonkey 1.1</td>
+                                          <td>
+                                            <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                              <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                              <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>Gecko</td>
+                                          <td>Epiphany 2.20</td>
+                                          <td>
+                                            <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                              <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                              <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>Webkit</td>
+                                          <td>Safari 1.2</td>
+                                          <td>
+                                            <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                              <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                              <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>Webkit</td>
+                                          <td>Safari 1.3</td>
+                                          <td>
+                                            <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                              <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                              <label class="custom-control-label" for="customSwitch3">Deactive</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+
+                                        </tbody>
+                                        <tfoot>
+                                        <tr>
+                                          <th>Rendering engine</th>
+                                          <th>Browser</th>
+                                          <th>Status</th>
+                                        </tr>
+                                        </tfoot>
+                                      </table>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+
                         </div>
                       </div>
                     </div>
@@ -339,19 +851,34 @@ EOD;
 <script src="../plugins/jquery-validation/additional-methods.min.js"></script>
 <script src="../dist/js/adminlte.min.js"></script>
 <script src="../dist/js/demo.js"></script>
-<!--tab 4-->
+<!--colorpicker-->
 <script src="../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<!--datatable-->
+<script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../plugins/jszip/jszip.min.js"></script>
+<script src="../plugins/pdfmake/pdfmake.min.js"></script>
+<script src="../plugins/pdfmake/vfs_fonts.js"></script>
+<script src="../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!--dropzone-->
+<script src="../plugins/dropzone/min/dropzone.min.js"></script>
 <script>
   $(function () {
 
     // tab 4
     $('.my-colorpicker2').colorpicker()
 
-    $('.my-colorpicker2').on('colorpickerChange', function(event) {
+    $('.my-colorpicker2').on('colorpickerChange', function (event) {
       $('.my-colorpicker2 .fa-square').css('color', event.color.toString());
     })
 
-    $("input[data-bootstrap-switch]").each(function(){
+    $("input[data-bootstrap-switch]").each(function () {
       $(this).bootstrapSwitch('state', $(this).prop('checked'));
     })
 
@@ -415,57 +942,54 @@ EOD;
     });
   });
 
-  Dropzone.autoDiscover = false
+  $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+  //Datemask2 mm/dd/yyyy
+  $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+  //Money Euro
+  $('[data-mask]').inputmask()
 
-  // Get the template HTML and remove it from the doumenthe template HTML and remove it from the doument
-  var previewNode = document.querySelector("#template")
-  previewNode.id = ""
-  var previewTemplate = previewNode.parentNode.innerHTML
-  previewNode.parentNode.removeChild(previewNode)
-
-  var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
-    url: "/target-url", // Set the url
-    thumbnailWidth: 80,
-    thumbnailHeight: 80,
-    parallelUploads: 20,
-    previewTemplate: previewTemplate,
-    autoQueue: false, // Make sure the files aren't queued until manually added
-    previewsContainer: "#previews", // Define the container to display the previews
-    clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
-  })
-
-  myDropzone.on("addedfile", function (file) {
-    // Hookup the start button
-    file.previewElement.querySelector(".start").onclick = function () {
-      myDropzone.enqueueFile(file)
-    }
-  })
-
-  // Update the total progress bar
-  myDropzone.on("totaluploadprogress", function (progress) {
-    document.querySelector("#total-progress .progress-bar").style.width = progress + "%"
-  })
-
-  myDropzone.on("sending", function (file) {
-    // Show the total progress bar when upload starts
-    document.querySelector("#total-progress").style.opacity = "1"
-    // And disable the start button
-    file.previewElement.querySelector(".start").setAttribute("disabled", "disabled")
-  })
-
-  // Hide the total progress bar when nothing's uploading anymore
-  myDropzone.on("queuecomplete", function (progress) {
-    document.querySelector("#total-progress").style.opacity = "0"
-  })
-
-  // Setup the buttons for all transfers
-  // The "add files" button doesn't need to be setup because the config
-  // `clickable` has already been specified.
-  document.querySelector("#actions .start").onclick = function () {
-    myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED))
-  }
-  document.querySelector("#actions .cancel").onclick = function () {
-    myDropzone.removeAllFiles(true)
-  }
+  // Dropzone.autoDiscover = false
+  //
+  // var previewNode = document.querySelector("#template")
+  // previewNode.id = ""
+  // var previewTemplate = previewNode.parentNode.innerHTML
+  // previewNode.parentNode.removeChild(previewNode)
+  //
+  // var myDropzone = new Dropzone(document.body, {
+  //   url: "/target-url",
+  //   thumbnailWidth: 80,
+  //   thumbnailHeight: 80,
+  //   parallelUploads: 20,
+  //   previewTemplate: previewTemplate,
+  //   autoQueue: false,
+  //   previewsContainer: "#previews",
+  //   clickable: ".fileinput-button"
+  // })
+  //
+  // myDropzone.on("addedfile", function (file) {
+  //   file.previewElement.querySelector(".start").onclick = function () {
+  //     myDropzone.enqueueFile(file)
+  //   }
+  // })
+  //
+  // myDropzone.on("totaluploadprogress", function (progress) {
+  //   document.querySelector("#total-progress .progress-bar").style.width = progress + "%"
+  // })
+  //
+  // myDropzone.on("sending", function (file) {
+  //   document.querySelector("#total-progress").style.opacity = "1"
+  //   file.previewElement.querySelector(".start").setAttribute("disabled", "disabled")
+  // })
+  //
+  // myDropzone.on("queuecomplete", function (progress) {
+  //   document.querySelector("#total-progress").style.opacity = "0"
+  // })
+  //
+  // document.querySelector("#actions .start").onclick = function () {
+  //   myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED))
+  // }
+  // document.querySelector("#actions .cancel").onclick = function () {
+  //   myDropzone.removeAllFiles(true)
+  // }
 </script>
 </html>
