@@ -39,7 +39,7 @@ EOD;
     include '_header.php';
     ?>
 
-    <section class="content">
+    <section class="content row">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
@@ -78,226 +78,196 @@ EOD;
                 </div>
               </div>
 
-              <form id="quickForm">
-                <div class="card-body">
+              <div class="row">
+<!--                <div class="col-4">-->
+<!--                  <form id="quickForm">-->
+<!--                    <div class="card-body">-->
+<!---->
+<!--                      <div class="form-group">-->
+<!--                        <label>Date range:</label>-->
+<!---->
+<!--                        <div class="input-group">-->
+<!--                          <div class="input-group-prepend">-->
+<!--                            <span class="input-group-text">-->
+<!--                              <i class="far fa-calendar-alt"></i>-->
+<!--                            </span>-->
+<!--                          </div>-->
+<!--                          <input type="text" class="form-control float-right" id="reservation">-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!---->
+<!--                      <div class="form-group">-->
+<!--                        <label for="org">Contact</label>-->
+<!--                        <input class="form-control" id="s-contact" type="text" placeholder="Organization">-->
+<!--                      </div>-->
+<!---->
+<!--                      <div class="form-group">-->
+<!--                        <label for="org">Delivery Status</label>-->
+<!--                        <input class="form-control" id="s-delivery" type="text" placeholder="Organization">-->
+<!--                      </div>-->
+<!---->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="card-footer">-->
+<!--                      <button type="submit" class="btn btn-primary">Submit</button>-->
+<!--                    </div>-->
+<!--                  </form>-->
+<!--                </div>-->
+                <div class="col-12">
+                  <section class="content">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="card card-primary">
+                            <!--                            <div class="card-header">-->
+                            <!--                              <h3 class="card-title text-uppercase"><b>All Client Data</b></h3>-->
+                            <!--                            </div>-->
 
-                  <div class="form-group row">
-                    <label for="f_name" class="col-12">Client Name</label>
-                    <div class="col-6">
-                      <input class="form-control" id="f_name" type="text" placeholder="First name">
-                    </div>
-                    <div class="col-6">
-                      <input class="form-control" id="l_name" type="text" placeholder="Last name">
-                    </div>
-                  </div>
+                            <div class="card-body">
+                              <table id="example1" class="table table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                  <th>Rendering engine</th>
+                                  <th>Browser</th>
+                                  <th>Platform(s)</th>
+                                  <th>Engine version</th>
+                                  <th>CSS grade</th>
+                                </tr>
+                                </thead>
+                                <tbody>
 
-                  <div class="form-group">
-                    <label for="org">Organizaton</label>
-                    <input class="form-control" id="org" type="text" placeholder="Organization">
-                  </div>
+                                <tr>
+                                  <td>Gecko</td>
+                                  <td>Netscape 7.2</td>
+                                  <td>Win 95+ / Mac OS 8.6-9.2</td>
+                                  <td>1.7</td>
+                                  <td>A</td>
+                                </tr>
+                                <tr>
+                                  <td>Gecko</td>
+                                  <td>Netscape Browser 8</td>
+                                  <td>Win 98SE+</td>
+                                  <td>1.7</td>
+                                  <td>A</td>
+                                </tr>
+                                <tr>
+                                  <td>Gecko</td>
+                                  <td>Netscape Navigator 9</td>
+                                  <td>Win 98+ / OSX.2+</td>
+                                  <td>1.8</td>
+                                  <td>A</td>
+                                </tr>
+                                <tr>
+                                  <td>Gecko</td>
+                                  <td>Mozilla 1.0</td>
+                                  <td>Win 95+ / OSX.1+</td>
+                                  <td>1</td>
+                                  <td>A</td>
+                                </tr>
+                                <tr>
+                                  <td>Gecko</td>
+                                  <td>Mozilla 1.1</td>
+                                  <td>Win 95+ / OSX.1+</td>
+                                  <td>1.1</td>
+                                  <td>A</td>
+                                </tr>
+                                <tr>
+                                  <td>Gecko</td>
+                                  <td>Mozilla 1.2</td>
+                                  <td>Win 95+ / OSX.1+</td>
+                                  <td>1.2</td>
+                                  <td>A</td>
+                                </tr>
+                                <tr>
+                                  <td>Gecko</td>
+                                  <td>Mozilla 1.3</td>
+                                  <td>Win 95+ / OSX.1+</td>
+                                  <td>1.3</td>
+                                  <td>A</td>
+                                </tr>
+                                <tr>
+                                  <td>Gecko</td>
+                                  <td>Mozilla 1.4</td>
+                                  <td>Win 95+ / OSX.1+</td>
+                                  <td>1.4</td>
+                                  <td>A</td>
+                                </tr>
+                                <tr>
+                                  <td>Gecko</td>
+                                  <td>Mozilla 1.5</td>
+                                  <td>Win 95+ / OSX.1+</td>
+                                  <td>1.5</td>
+                                  <td>A</td>
+                                </tr>
+                                <tr>
+                                  <td>Gecko</td>
+                                  <td>Mozilla 1.6</td>
+                                  <td>Win 95+ / OSX.1+</td>
+                                  <td>1.6</td>
+                                  <td>A</td>
+                                </tr>
+                                <tr>
+                                  <td>Gecko</td>
+                                  <td>Mozilla 1.7</td>
+                                  <td>Win 98+ / OSX.1+</td>
+                                  <td>1.7</td>
+                                  <td>A</td>
+                                </tr>
+                                <tr>
+                                  <td>Gecko</td>
+                                  <td>Mozilla 1.8</td>
+                                  <td>Win 98+ / OSX.1+</td>
+                                  <td>1.8</td>
+                                  <td>A</td>
+                                </tr>
+                                <tr>
+                                  <td>Gecko</td>
+                                  <td>Seamonkey 1.1</td>
+                                  <td>Win 98+ / OSX.2+</td>
+                                  <td>1.8</td>
+                                  <td>A</td>
+                                </tr>
+                                <tr>
+                                  <td>Gecko</td>
+                                  <td>Epiphany 2.20</td>
+                                  <td>Gnome</td>
+                                  <td>1.8</td>
+                                  <td>A</td>
+                                </tr>
+                                <tr>
+                                  <td>Webkit</td>
+                                  <td>Safari 1.2</td>
+                                  <td>OSX.3</td>
+                                  <td>125.5</td>
+                                  <td>A</td>
+                                </tr>
+                                <tr>
+                                  <td>Webkit</td>
+                                  <td>Safari 1.3</td>
+                                  <td>OSX.3</td>
+                                  <td>312.8</td>
+                                  <td>A</td>
+                                </tr>
 
-                  <div class="form-group row">
-                    <label for="contact_1" class="col-6">Personal Contact</label>
-                    <label for="contact_2" class="col-6">Organization Contact</label>
-                    <div class="col-6">
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                  <th>Rendering engine</th>
+                                  <th>Browser</th>
+                                  <th>Platform(s)</th>
+                                  <th>Engine version</th>
+                                  <th>CSS grade</th>
+                                </tr>
+                                </tfoot>
+                              </table>
+                            </div>
+
+                          </div>
                         </div>
-                        <input id="contact_1" type="text" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask>
                       </div>
                     </div>
-                    <div class="col-6">
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><i class="fas fa-phone"></i></span>
-                        </div>
-                        <input id="contact_2" type="text" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="address">Address</label>
-                    <input class="form-control" id="address" type="text" placeholder="Organization">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                           placeholder="Enter email">
-                  </div>
-
-                  <div class="form-group row">
-                    <label for="username" class="col-6">Username</label>
-                    <label for="password" class="col-6">Password</label>
-                    <div class="col-6">
-                      <input class="form-control" id="username" type="text" placeholder="Username">
-                    </div>
-                    <div class="col-6">
-                      <input type="password" name="password" class="form-control" id="password" placeholder="Password">
-                    </div>
-                  </div>
-
+                  </section>
                 </div>
-
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </form>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card card-primary">
-              <div class="card-header">
-                <h3 class="card-title text-uppercase"><b>All Client Data</b></h3>
-              </div>
-
-              <div class="card-body">
-                <table id="example2" class="table table-bordered table-hover">
-                  <thead>
-                  <tr>
-                    <th>Rendering engine</th>
-                    <th>Browser</th>
-                    <th>Platform(s)</th>
-                    <th>Engine version</th>
-                    <th>CSS grade</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Netscape 7.2</td>
-                    <td>Win 95+ / Mac OS 8.6-9.2</td>
-                    <td>1.7</td>
-                    <td>A</td>
-                  </tr>
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Netscape Browser 8</td>
-                    <td>Win 98SE+</td>
-                    <td>1.7</td>
-                    <td>A</td>
-                  </tr>
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Netscape Navigator 9</td>
-                    <td>Win 98+ / OSX.2+</td>
-                    <td>1.8</td>
-                    <td>A</td>
-                  </tr>
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Mozilla 1.0</td>
-                    <td>Win 95+ / OSX.1+</td>
-                    <td>1</td>
-                    <td>A</td>
-                  </tr>
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Mozilla 1.1</td>
-                    <td>Win 95+ / OSX.1+</td>
-                    <td>1.1</td>
-                    <td>A</td>
-                  </tr>
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Mozilla 1.2</td>
-                    <td>Win 95+ / OSX.1+</td>
-                    <td>1.2</td>
-                    <td>A</td>
-                  </tr>
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Mozilla 1.3</td>
-                    <td>Win 95+ / OSX.1+</td>
-                    <td>1.3</td>
-                    <td>A</td>
-                  </tr>
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Mozilla 1.4</td>
-                    <td>Win 95+ / OSX.1+</td>
-                    <td>1.4</td>
-                    <td>A</td>
-                  </tr>
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Mozilla 1.5</td>
-                    <td>Win 95+ / OSX.1+</td>
-                    <td>1.5</td>
-                    <td>A</td>
-                  </tr>
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Mozilla 1.6</td>
-                    <td>Win 95+ / OSX.1+</td>
-                    <td>1.6</td>
-                    <td>A</td>
-                  </tr>
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Mozilla 1.7</td>
-                    <td>Win 98+ / OSX.1+</td>
-                    <td>1.7</td>
-                    <td>A</td>
-                  </tr>
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Mozilla 1.8</td>
-                    <td>Win 98+ / OSX.1+</td>
-                    <td>1.8</td>
-                    <td>A</td>
-                  </tr>
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Seamonkey 1.1</td>
-                    <td>Win 98+ / OSX.2+</td>
-                    <td>1.8</td>
-                    <td>A</td>
-                  </tr>
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Epiphany 2.20</td>
-                    <td>Gnome</td>
-                    <td>1.8</td>
-                    <td>A</td>
-                  </tr>
-                  <tr>
-                    <td>Webkit</td>
-                    <td>Safari 1.2</td>
-                    <td>OSX.3</td>
-                    <td>125.5</td>
-                    <td>A</td>
-                  </tr>
-                  <tr>
-                    <td>Webkit</td>
-                    <td>Safari 1.3</td>
-                    <td>OSX.3</td>
-                    <td>312.8</td>
-                    <td>A</td>
-                  </tr>
-
-                  </tbody>
-                  <tfoot>
-                  <tr>
-                    <th>Rendering engine</th>
-                    <th>Browser</th>
-                    <th>Platform(s)</th>
-                    <th>Engine version</th>
-                    <th>CSS grade</th>
-                  </tr>
-                  </tfoot>
-                </table>
               </div>
 
             </div>
@@ -305,6 +275,7 @@ EOD;
         </div>
       </div>
     </section>
+
 
   </div>
 
