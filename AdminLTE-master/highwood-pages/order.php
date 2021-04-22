@@ -48,35 +48,9 @@ EOD;
                 <h3 class="card-title text-uppercase"><b>Add new client</b></h3>
               </div>
 
-              <div class="row">
-                <div class="col-md-2 col-sm-4 col-12">
-                  <div class="info-box">
-                    <span class="info-box-icon bg-gradient-olive"><i class="fas fa-database"></i></span>
-
-                    <div class="info-box-content">
-                      <span class="info-box-text font-weight-bold text-uppercase">Record Count</span>
-                      <span class="info-box-custom-data">999</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-10 col-sm-8 col-12">
-                  <div class="info-box">
-                    <span class="info-box-icon bg-gradient-olive"><?php echo $icon ?></span>
-
-                    <div class="info-box-content">
-                      <span class="info-box-text">Last Record Data</span>
-                      <span class="info-box-custom-data">Lorem ipsum dolor sit amet, consectetur.</span>
-                    </div>
-                    <button type="submit" class="btn btn-info font-weight-bold mr-1 text-uppercase"><i
-                        class="fas fa-arrow-down"></i> Load
-                    </button>
-                    <button type="submit" class="btn btn-danger font-weight-bold mr-1 text-uppercase"><i
-                        class="fas fa-times"></i> Delete
-                    </button>
-                  </div>
-                </div>
-              </div>
+              <?php
+              include '_latest.php'
+              ?>
 
               <div class="row">
 <!--                <div class="col-4">-->
@@ -276,6 +250,213 @@ EOD;
       </div>
     </section>
 
+    <section class="content row">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title text-uppercase"><b>Add new client</b></h3>
+              </div>
+
+              <div class="row">
+                <div class="col-4">
+                  <form id="quickForm">
+                    <div class="card-body">
+
+                      <div class="form-group">
+                        <label>Date range:</label>
+
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="far fa-calendar-alt"></i>
+                            </span>
+                          </div>
+                          <input type="text" class="form-control float-right" id="reservation">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="org">Contact</label>
+                        <input class="form-control" id="s-contact" type="text" placeholder="Organization">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="org">Delivery Status</label>
+                        <input class="form-control" id="s-delivery" type="text" placeholder="Organization">
+                      </div>
+
+                    </div>
+
+                    <div class="card-footer">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </form>
+
+                  <form id="quickForm">
+                    <div class="card-body">
+
+                      <div class="form-group">
+                        <label>Date range:</label>
+
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="far fa-calendar-alt"></i>
+                            </span>
+                          </div>
+                          <input type="text" class="form-control float-right" id="reservation">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="org">Contact</label>
+                        <input class="form-control" id="s-contact" type="text" placeholder="Organization">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="org">Delivery Status</label>
+                        <input class="form-control" id="s-delivery" type="text" placeholder="Organization">
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+                <div class="col-8">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-header">
+                          <h3 class="card-title">Fixed Header Table</h3>
+
+                          <div class="card-tools">
+                            <div class="input-group input-group-sm" style="width: 150px;">
+                              <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+                              <div class="input-group-append">
+                                <button type="submit" class="btn btn-default">
+                                  <i class="fas fa-search"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body table-responsive p-0" style="height: 300px;">
+                          <table class="table table-head-fixed text-nowrap">
+                            <thead>
+                            <tr>
+                              <th>ID</th>
+                              <th>User</th>
+                              <th>Date</th>
+                              <th>Status</th>
+                              <th>Reason</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                              <td>183</td>
+                              <td>John Doe</td>
+                              <td>11-7-2014</td>
+                              <td><span class="tag tag-success">Approved</span></td>
+                              <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                            </tr>
+                            <tr>
+                              <td>219</td>
+                              <td>Alexander Pierce</td>
+                              <td>11-7-2014</td>
+                              <td><span class="tag tag-warning">Pending</span></td>
+                              <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                            </tr>
+                            <tr>
+                              <td>657</td>
+                              <td>Bob Doe</td>
+                              <td>11-7-2014</td>
+                              <td><span class="tag tag-primary">Approved</span></td>
+                              <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                            </tr>
+                            <tr>
+                              <td>175</td>
+                              <td>Mike Doe</td>
+                              <td>11-7-2014</td>
+                              <td><span class="tag tag-danger">Denied</span></td>
+                              <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                            </tr>
+                            <tr>
+                              <td>134</td>
+                              <td>Jim Doe</td>
+                              <td>11-7-2014</td>
+                              <td><span class="tag tag-success">Approved</span></td>
+                              <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                            </tr>
+                            <tr>
+                              <td>494</td>
+                              <td>Victoria Doe</td>
+                              <td>11-7-2014</td>
+                              <td><span class="tag tag-warning">Pending</span></td>
+                              <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                            </tr>
+                            <tr>
+                              <td>832</td>
+                              <td>Michael Doe</td>
+                              <td>11-7-2014</td>
+                              <td><span class="tag tag-primary">Approved</span></td>
+                              <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                            </tr>
+                            <tr>
+                              <td>982</td>
+                              <td>Rocky Doe</td>
+                              <td>11-7-2014</td>
+                              <td><span class="tag tag-danger">Denied</span></td>
+                              <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.card-body -->
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <form id="quickForm">
+                        <div class="card-body">
+
+                          <div class="form-group">
+                            <label>Date range:</label>
+
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="far fa-calendar-alt"></i>
+                            </span>
+                              </div>
+                              <input type="text" class="form-control float-right" id="reservation">
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="org">Contact</label>
+                            <input class="form-control" id="s-contact" type="text" placeholder="Organization">
+                          </div>
+
+                          <div class="form-group">
+                            <label for="org">Delivery Status</label>
+                            <input class="form-control" id="s-delivery" type="text" placeholder="Organization">
+                          </div>
+
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
   </div>
 
@@ -311,6 +492,15 @@ EOD;
       "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
     $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+    $('#example3').DataTable({
       "paging": true,
       "lengthChange": false,
       "searching": false,

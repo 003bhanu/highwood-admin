@@ -62,35 +62,9 @@ EOD;
                 <h3 class="card-title text-uppercase"><b>Add new client</b></h3>
               </div>
 
-              <div class="row">
-                <div class="col-md-2 col-sm-4 col-12">
-                  <div class="info-box">
-                    <span class="info-box-icon bg-gradient-olive"><i class="fas fa-database"></i></span>
-
-                    <div class="info-box-content">
-                      <span class="info-box-text font-weight-bold text-uppercase">Record Count</span>
-                      <span class="info-box-custom-data">999</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-10 col-sm-8 col-12">
-                  <div class="info-box">
-                    <span class="info-box-icon bg-gradient-olive"><?php echo $icon ?></span>
-
-                    <div class="info-box-content">
-                      <span class="info-box-text">Last Record Data</span>
-                      <span class="info-box-custom-data">Lorem ipsum dolor sit amet, consectetur.</span>
-                    </div>
-                    <button type="submit" class="btn btn-info font-weight-bold mr-1 text-uppercase"><i
-                        class="fas fa-arrow-down"></i> Load
-                    </button>
-                    <button type="submit" class="btn btn-danger font-weight-bold mr-1 text-uppercase"><i
-                        class="fas fa-times"></i> Delete
-                    </button>
-                  </div>
-                </div>
-              </div>
+              <?php
+              include '_latest.php'
+              ?>
 
               <form id="quickForm">
                 <div class="card-body">
