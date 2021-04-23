@@ -2,28 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05545c86-7a2e-4e04-8612-1cf28679d246" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/_latest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/item.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminLTE-master/.browserslistrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminLTE-master/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminLTE-master/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminLTE-master/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminLTE-master/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminLTE-master/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminLTE-master/.gitpod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminLTE-master/.lgtm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminLTE-master/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminLTE-master/.stylelintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminLTE-master/.stylelintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminLTE-master/CODE_OF_CONDUCT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminLTE-master/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminLTE-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/_alert.php" beforeDir="false" afterPath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/_alert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/_latest.php" beforeDir="false" afterPath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/_latest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/_sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/_sidebar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/blog.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/client.php" beforeDir="false" afterPath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/input.php" beforeDir="false" afterPath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/input.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/AdminLTE-master/highwood-pages/_alert.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +73,8 @@
       <workItem from="1619006862966" duration="230000" />
       <workItem from="1619065589176" duration="7047000" />
       <workItem from="1619085418875" duration="6784000" />
+      <workItem from="1619092935580" duration="419000" />
+      <workItem from="1619151806225" duration="23293000" />
     </task>
     <servers />
   </component>

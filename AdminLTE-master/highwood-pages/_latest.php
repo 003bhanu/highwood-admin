@@ -9,7 +9,7 @@ if(!isset($icon)) {
 }
 ?>
 <div class="row">
-  <div class="col-md-2 col-sm-4 col-12">
+  <div class="col-md-2 col-sm-6 col-12">
     <div class="info-box">
       <span class="info-box-icon bg-gradient-olive"><i class="fas fa-database"></i></span>
 
@@ -20,7 +20,7 @@ if(!isset($icon)) {
     </div>
   </div>
 
-  <div class="col-md-10 col-sm-8 col-12">
+  <div class="col-md-10 col-sm-6 col-12">
     <div class="info-box">
       <span class="info-box-icon bg-gradient-olive"><?php echo $icon ?></span>
 

@@ -51,7 +51,7 @@ EOD;
                     <div class="col-md-12">
                         <div class="card card-primary">
                             <div class="card-header">
-                                <h3 class="card-title text-uppercase"><b>Add new client</b></h3>
+                                <h3 class="card-title text-uppercase"><b>Add new blog</b></h3>
                             </div>
 
                             <?php
@@ -151,7 +151,9 @@ EOD;
                                 </div>
 
                                 <div class="card-footer">
-                                    <button id="swalDefaultSuccess" type="submit" class="btn btn-primary">Submit</button>
+                                    <button id="submit" type="button" class="btn btn-primary text-uppercase font-weight-bold"><i
+                                                class="fas fa-save"></i> submit
+                                    </button>
                                 </div>
                             </form>
 
@@ -167,143 +169,35 @@ EOD;
                     <div class="col-md-12">
                         <div class="card card-primary">
                             <div class="card-header">
-                                <h3 class="card-title text-uppercase"><b>All Client Data</b></h3>
+                                <h3 class="card-title text-uppercase"><b>All blog Data</b></h3>
                             </div>
 
                             <div class="card-body">
                                 <table id="example2" class="table table-bordered table-hover">
                                     <thead>
                                     <tr>
-                                        <th>Rendering engine</th>
-                                        <th>Browser</th>
-                                        <th>Platform(s)</th>
-                                        <th>Engine version</th>
-                                        <th>CSS grade</th>
+                                        <th>Blog ID</th>
+                                        <th>Title</th>
+                                        <th>Summary</th>
+                                        <th>Status</th>
                                     </tr>
                                     </thead>
                                     <tbody>
 
                                     <tr>
-                                        <td>Gecko</td>
-                                        <td>Netscape 7.2</td>
-                                        <td>Win 95+ / Mac OS 8.6-9.2</td>
-                                        <td>1.7</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gecko</td>
-                                        <td>Netscape Browser 8</td>
-                                        <td>Win 98SE+</td>
-                                        <td>1.7</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gecko</td>
-                                        <td>Netscape Navigator 9</td>
-                                        <td>Win 98+ / OSX.2+</td>
-                                        <td>1.8</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gecko</td>
-                                        <td>Mozilla 1.0</td>
-                                        <td>Win 95+ / OSX.1+</td>
-                                        <td>1</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gecko</td>
-                                        <td>Mozilla 1.1</td>
-                                        <td>Win 95+ / OSX.1+</td>
-                                        <td>1.1</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gecko</td>
-                                        <td>Mozilla 1.2</td>
-                                        <td>Win 95+ / OSX.1+</td>
-                                        <td>1.2</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gecko</td>
-                                        <td>Mozilla 1.3</td>
-                                        <td>Win 95+ / OSX.1+</td>
-                                        <td>1.3</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gecko</td>
-                                        <td>Mozilla 1.4</td>
-                                        <td>Win 95+ / OSX.1+</td>
-                                        <td>1.4</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gecko</td>
-                                        <td>Mozilla 1.5</td>
-                                        <td>Win 95+ / OSX.1+</td>
-                                        <td>1.5</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gecko</td>
-                                        <td>Mozilla 1.6</td>
-                                        <td>Win 95+ / OSX.1+</td>
-                                        <td>1.6</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gecko</td>
-                                        <td>Mozilla 1.7</td>
-                                        <td>Win 98+ / OSX.1+</td>
-                                        <td>1.7</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gecko</td>
-                                        <td>Mozilla 1.8</td>
-                                        <td>Win 98+ / OSX.1+</td>
-                                        <td>1.8</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gecko</td>
-                                        <td>Seamonkey 1.1</td>
-                                        <td>Win 98+ / OSX.2+</td>
-                                        <td>1.8</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gecko</td>
-                                        <td>Epiphany 2.20</td>
-                                        <td>Gnome</td>
-                                        <td>1.8</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Webkit</td>
-                                        <td>Safari 1.2</td>
-                                        <td>OSX.3</td>
-                                        <td>125.5</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Webkit</td>
-                                        <td>Safari 1.3</td>
-                                        <td>OSX.3</td>
-                                        <td>312.8</td>
-                                        <td>A</td>
+                                        <td>Loading..</td>
+                                        <td>Loading..</td>
+                                        <td>Loading..</td>
+                                        <td>Loading..</td>
                                     </tr>
 
                                     </tbody>
                                     <tfoot>
                                     <tr>
-                                        <th>Rendering engine</th>
-                                        <th>Browser</th>
-                                        <th>Platform(s)</th>
-                                        <th>Engine version</th>
-                                        <th>CSS grade</th>
+                                        <th>Blog ID</th>
+                                        <th>Title</th>
+                                        <th>Summary</th>
+                                        <th>Status</th>
                                     </tr>
                                     </tfoot>
                                 </table>
@@ -343,72 +237,71 @@ EOD;
 <!--dropzone-->
 <script src="../plugins/dropzone/min/dropzone.min.js"></script>
 <?php
-//include '_alert.php';
+include '_alert.php';
 ?>
 <script>
-
-    $('.swalDefaultSuccess').click(function() {
-        alert("xx");
-        // Toast.fire({
-        //     icon: 'success',
-        //     title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-        // })
+    $('#submit').click(function () {
+        if(false) {
+            sweetAlert("success", "Blog saved successfully!");
+        }else {
+            sweetAlert("error", "Blog save failed!");
+        }
     });
 
-   // $(function () {
-   //     $('#example2').DataTable({
-   //         "paging": true,
-   //         "lengthChange": false,
-   //         "searching": false,
-   //         "ordering": true,
-   //         "info": true,
-   //         "autoWidth": false,
-   //         "responsive": true,
-   //     });
-   // });
-   //
-   // Dropzone.autoDiscover = false;
-   //
-   // var previewNode = document.querySelector("#template")
-   // previewNode.id = ""
-   // var previewTemplate = previewNode.parentNode.innerHTML
-   // previewNode.parentNode.removeChild(previewNode)
-   //
-   // var myDropzone = new Dropzone(document.body, {
-   //     url: "/target-url",
-   //     thumbnailWidth: 80,
-   //     thumbnailHeight: 80,
-   //     parallelUploads: 20,
-   //     previewTemplate: previewTemplate,
-   //     autoQueue: false,
-   //     previewsContainer: "#previews",
-   //     clickable: ".fileinput-button"
-   // })
-   //
-   // myDropzone.on("addedfile", function (file) {
-   //     file.previewElement.querySelector(".start").onclick = function () {
-   //         myDropzone.enqueueFile(file)
-   //     }
-   // })
-   //
-   // myDropzone.on("totaluploadprogress", function (progress) {
-   //     document.querySelector("#total-progress .progress-bar").style.width = progress + "%"
-   // })
-   //
-   // myDropzone.on("sending", function (file) {
-   //     document.querySelector("#total-progress").style.opacity = "1"
-   //     file.previewElement.querySelector(".start").setAttribute("disabled", "disabled")
-   // })
-   //
-   // myDropzone.on("queuecomplete", function (progress) {
-   //     document.querySelector("#total-progress").style.opacity = "0"
-   // })
-   //
-   // document.querySelector("#actions .start").onclick = function () {
-   //     myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED))
-   // }
-   // document.querySelector("#actions .cancel").onclick = function () {
-   //     myDropzone.removeAllFiles(true)
-   // }
+   $(function () {
+       $('#example2').DataTable({
+           "paging": true,
+           "lengthChange": false,
+           "searching": false,
+           "ordering": true,
+           "info": true,
+           "autoWidth": false,
+           "responsive": true,
+       });
+   });
+
+   Dropzone.autoDiscover = false;
+
+   var previewNode = document.querySelector("#template")
+   previewNode.id = ""
+   var previewTemplate = previewNode.parentNode.innerHTML
+   previewNode.parentNode.removeChild(previewNode)
+
+   var myDropzone = new Dropzone(document.body, {
+       url: "/target-url",
+       thumbnailWidth: 80,
+       thumbnailHeight: 80,
+       parallelUploads: 20,
+       previewTemplate: previewTemplate,
+       autoQueue: false,
+       previewsContainer: "#previews",
+       clickable: ".fileinput-button"
+   })
+
+   myDropzone.on("addedfile", function (file) {
+       file.previewElement.querySelector(".start").onclick = function () {
+           myDropzone.enqueueFile(file)
+       }
+   })
+
+   myDropzone.on("totaluploadprogress", function (progress) {
+       document.querySelector("#total-progress .progress-bar").style.width = progress + "%"
+   })
+
+   myDropzone.on("sending", function (file) {
+       document.querySelector("#total-progress").style.opacity = "1"
+       file.previewElement.querySelector(".start").setAttribute("disabled", "disabled")
+   })
+
+   myDropzone.on("queuecomplete", function (progress) {
+       document.querySelector("#total-progress").style.opacity = "0"
+   })
+
+   document.querySelector("#actions .start").onclick = function () {
+       myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED))
+   }
+   document.querySelector("#actions .cancel").onclick = function () {
+       myDropzone.removeAllFiles(true)
+   }
 </script>
 </html>
